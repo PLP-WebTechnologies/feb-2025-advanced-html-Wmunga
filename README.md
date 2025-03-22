@@ -11,7 +11,7 @@ Apply multimedia elements such as audio and video.
 - Add an ordered list with roman numerals
 - Add an external image from pexels.com
 - Add a table of 5 contacts with; name, address, mobile and emails
-- Add a registration form
+- 
 
 >[!NOTE]
 >  The registration form should have:

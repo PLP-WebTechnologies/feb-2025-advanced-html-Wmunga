@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML week 2 assignment</title>
+    </head>
+    <body>
+        <h1>Requirements</h1> 
+        <ol type = i>
+            <li>Create an index.html file</li>
+            <li>Add an ordered list with roman numerals</li>
+            <li>Add an external image from pexels.com</li> 
+            <li>Add a table of 5 contacts with; name, address, mobile and emails</li>
+            <li>Add a registration form</li>
+        </ol>
+        <img src="https://images.pexels.com/photos/904350/pexels-photo-904350.jpeg?auto=compress&cs=tinysrgb&w=600" alt="image of a white and blue handbag" width="150" height="150">
+        <table border 1>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Wonder</td>
+                    <td>1234, Nairobi</td>
+                    <td>0712345678</td>
+                    <td>wonder1234@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Grace</td>
+                    <td>5678, Mombasa</td>
+                    <td>0712345678</td>
+                    <td>grace5678@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>91011, Kisumu</td>
+                    <td>0712345678</td>
+                    <td>john91011@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Paul</td>
+                    <td>121314, Nakuru</td>
+                    <td>0712345678</td>
+                    <td>paul121314@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>James</td>
+                    <td>151617, Eldoret</td>
+                    <td>0712345678</td>
+                    <td>james151617@gmail.com</td>
+                </tr>
+        </table>
+        <form action="" method="">
+            <label for="Full_name">Full name:</label>
+            <input type="text" id="Full_name" name="Full_name" required Placeholder="Your Full_name"><br><br>
+            <label for="Email">Email:</label>
+            <input type="email" id="Email" name="Email" required placeholder="youremail@gmail.com"><br><br>
+            <label for="Password">Password:</label>
+            <input type="password" id="Password" name="Password" required placeholder="your password"><br><br>
+            <label>Date of Birth:</label> 
+        <label for="day">Day:</label> 
+        <select id="day" name="day" required> 
+            <option value="">Day</option> 
+            <script> 
+                for (let i = 1; i <= 31; i++) { 
+                    document.write(`<option value="${i}">${i}</option>`); 
+                } 
+            </script> 
+        </select> 
+ 
+        <label for="month">Month:</label> 
+        <select id="month" name="month" required> 
+            <option value="">Month</option> 
+            <option value="1">January</option> 
+            <option value="2">February</option> 
+            <option value="3">March</option> 
+            <option value="4">April</option> 
+            <option value="5">May</option> 
+            <option value="6">June</option> 
+            <option value="7">July</option> 
+            <option value="8">August</option> 
+            <option value="9">September</option> 
+            <option value="10">October</option> 
+            <option value="11">November</option> 
+            <option value="12">December</option> 
+        </select> 
+ 
+        <label for="year">Year:</label> 
+        <select id="year" name="year" required> 
+            <option value="">Year</option> 
+            <script> 
+                const currentYear = new Date().getFullYear(); 
+                for (let i = currentYear; i >= currentYear - 100; i--) { 
+                    document.write(`<option value="${i}">${i}</option>`); 
+                } 
+            </script> 
+        </select> 
+        <br><br>
+        <br><br>
+        <label>Gender:</label> 
+        <input type="radio" id="male" name="gender" value="male" required> 
+        <label for="male">Male</label> 
+        <input type="radio" id="female" name="gender" value="female" required> 
+        <label for="female">Female</label> 
+        <br><br>
+        <br><br>
+        <label>Hobbies:</label> 
+        <input type="checkbox" id="reading" name="hobbies" value="reading"> 
+        <label for="reading">Reading</label> 
+        <input type="checkbox" id="sports" name="hobbies" value="sports"> 
+        <label for="sports">Sports</label> 
+        <input type="checkbox" id="music" name="hobbies" value="music"> 
+        <label for="music">Music</label> 
+ 
+        <br><br> 
+        <input type="submit" value="Register">             
+        </form>
+    </body>
+    
+
+</html>
